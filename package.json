@@ -4,7 +4,8 @@
   "description": "Building a betting host",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/erankit12/tabcorp/issues"
   },
-  "homepage": "https://github.com/erankit12/tabcorp#readme"
+  "homepage": "https://github.com/erankit12/tabcorp#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
 }
