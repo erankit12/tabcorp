@@ -7,7 +7,7 @@ var printOutput = (output) => {
 
 var invalidInput = () => {
   process.stdout.write("Invalid input");
-  process.exit(0);
+  //process.exit(0);
 }
 
 module.exports.invalidInput = invalidInput;

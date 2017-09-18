@@ -4,14 +4,16 @@ var exacta = require('../../core/exacta/exacta');
 
 var resolveBet = (betData) =>{
   var betType = betData.shift();
+  var output;
   if(betType === 'W'){
-    win.add(betData);
+    output = win.add(betData);
   }
   else if(betType === 'P'){
-    place.add(betData);
+    output = place.add(betData);
   }
   else{
-    exacta.add(betData);
+    output = exacta.add(betData);
   }
+  return output;
 }
 module.exports.resolveBet = resolveBet;

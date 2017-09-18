@@ -1,14 +1,16 @@
 var betSelector = require('./helper/bet-selector');
 var calcDividend = require('./helper/calc-dividend');
+var response = require('./response');
 
 var readInput = (input) => {
   var inputArr = input.split(":");
   var type = inputArr.shift();
   if (type === "Bet") {
-    betSelector.resolveBet(inputArr);
+    var betPlaced = betSelector.resolveBet(inputArr);
   }
   else{
-    calcDividend.calcDividend(inputArr);
+    var output = calcDividend.calcDividend(inputArr);
+    response.printOutput(output);
   }
 }
 
