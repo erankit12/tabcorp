@@ -1,5 +1,7 @@
 var readline = require('readline');
-
+var input = require('./read-input');
+var validate = require('../lib/validate');
+var response = require('./response');
 
 var rl = readline.createInterface({
   input: process.stdin,
@@ -7,5 +9,11 @@ var rl = readline.createInterface({
   terminal: false
 });
 rl.on('line', function (data) {
-  console.log("data", data);
+  if(validate.valid(data)){
+    input.readInput(data)
+  }
+  else{
+    response.invalidInput();
+  }
+
 });
