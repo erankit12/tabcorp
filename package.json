@@ -1,0 +1,19 @@
+{
+  "name": "tabcorp",
+  "version": "1.0.0",
+  "description": "Building a betting host",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erankit12/tabcorp.git"
+  },
+  "author": "Ankit Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erankit12/tabcorp/issues"
+  },
+  "homepage": "https://github.com/erankit12/tabcorp#readme"
+}
