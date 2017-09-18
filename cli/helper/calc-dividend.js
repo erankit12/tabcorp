@@ -1,10 +1,10 @@
-var winDividend = require('../core/win/dividend');
-var placeDividend = require('../core/place/dividend');
-var exactaDividend = require('../core/exacta/dividend');
-var win = require('../core/win/win');
-var place = require('../core/place/place');
-var exacta = require('../core/exacta/exacta');
-var response = require('./response');
+var winDividend = require('../../core/win/dividend');
+var placeDividend = require('../../core/place/dividend');
+var exactaDividend = require('../../core/exacta/dividend');
+var win = require('../../core/win/win');
+var place = require('../../core/place/place');
+var exacta = require('../../core/exacta/exacta');
+var response = require('../response');
 
 var calcDividend = (result) =>{
   var output = [];
