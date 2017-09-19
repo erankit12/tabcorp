@@ -11,6 +11,7 @@ Tote betting involves punters choosing the outcome of a race by placing bets int
 # Structure Details
 
 Details of the directory structure used in the project
+
 | Directory | Detail |
 | ------ | ------ |
 |/ cli| for command line interaction |
