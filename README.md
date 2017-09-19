@@ -39,6 +39,8 @@ $ npm start
 - input should be from terminal only
 <sample input>
 ```
+<b>Note</b>: Once output is displayed, we need to restart.
+
 # Sample Input
 
 ```sh
@@ -105,3 +107,4 @@ $ npm test
 # Assumptions
 - If no input bet provided for any particular bet type then output will also not contain that bet type. eg: if input contains entries for only win and place then output will also contains only win and place and not for exacta.
 - If horses in result entry is not present in input bets, then output for that bet type will be message like "No bet on this horse" for the corresponding bet type.
+- Stake should be some valid value greater than 0.
