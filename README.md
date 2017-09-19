@@ -2,7 +2,7 @@
 
 Tote betting involves punters choosing the outcome of a race by placing bets into a pool of money. Punter who successfully predict the outcome of a race take a share of the pool proportional to their stake.
   - Contains 3 types of Bet(i.e Win, Place, Exacta) in particular format: <br>
-        -  format is Bet:&lt;product&gt;:&lt;selections&gt;:&lt;stake&gt;<br>
+        -  Bet:&lt;product&gt;:&lt;selections&gt;:&lt;stake&gt;<br>
   - Last input line will be result as per the race as below format: <br>
         - Result:&lt;first&gt;:&lt;second&gt;:&lt;third&gt;     
   - Output of above will be in below format: <br>
