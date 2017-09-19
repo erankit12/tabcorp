@@ -26,7 +26,7 @@ describe("Validate function ", function(){
     done();
   });
 
-  it("should return false when horse no is not entered in whole digit", function(done){
+  it("should return false when horse no entered is not integer", function(done){
     var response = validate.valid('Bet:W:2.1:4');
     var expectedResult = false;
     assert.deepEqual(response, expectedResult);
@@ -40,14 +40,14 @@ describe("Validate function ", function(){
     done();
   });
 
-  it("should return false when 2 horses are added in exacta bet", function(done){
+  it("should return false when horses are not entered in pair of 2 in exacta bet", function(done){
     var response = validate.valid('Bet:E:2:4');
     var expectedResult = false;
     assert.deepEqual(response, expectedResult);
     done();
   });
 
-  it("should return false when result values are not whole digit", function(done){
+  it("should return false when result values are not integer", function(done){
     var response = validate.valid('Result:1.1:2:4');
     var expectedResult = false;
     assert.deepEqual(response, expectedResult);
