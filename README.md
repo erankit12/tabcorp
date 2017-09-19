@@ -1,12 +1,12 @@
 # Tabcorp : Betting host
 
 Tote betting involves punters choosing the outcome of a race by placing bets into a pool of money. Punter who successfully predict the outcome of a race take a share of the pool proportional to their stake.
-  - Contains 3 types of Bet(i.e Win, Place, Exacta) in particular format
+  - Contains 3 types of Bet(i.e Win, Place, Exacta) in particular format.
   - format is Bet:&lt;product&gt;:&lt;selections&gt;:&lt;stake&gt;
   - Last input line will be result as per the race as below format
-        - Result:<first>:<second>:<third>     
+        - Result:&lt;first&gt;:&lt;second&gt;:&lt;third&gt;     
   - Output of above will be in below format
-        - <product>:<winningSelections>:<dividend>
+        - &lt;product&gt;:&lt;winningSelections&gt;:&lt;dividend&gt;
 
 # Structure Details
 
