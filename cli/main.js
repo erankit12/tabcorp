@@ -8,6 +8,8 @@ var rl = readline.createInterface({
   output: process.stdout,
   terminal: false
 });
+/* read input line by line and check the validation of input
+if validation passed then proceed else pass the request to handle invalidation */
 rl.on('line', function (data) {
   if(validate.valid(data)){
     input.readInput(data)

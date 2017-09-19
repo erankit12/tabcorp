@@ -1,3 +1,4 @@
+// print the final output
 var printOutput = (output) => {
   output.forEach(function(out){
     process.stdout.write(out+"\n");
@@ -5,9 +6,10 @@ var printOutput = (output) => {
   process.exit(0);
 }
 
+// print invalid output in case of validation failed
 var invalidInput = () => {
   process.stdout.write("Invalid input");
-  //process.exit(0);
+  process.exit(0);
 }
 
 module.exports.invalidInput = invalidInput;

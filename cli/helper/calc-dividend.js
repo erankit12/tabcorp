@@ -6,6 +6,7 @@ var place = require('../../core/place/place');
 var exacta = require('../../core/exacta/exacta');
 var response = require('../response');
 
+/* calcDividend will fetch the output from respective pool with their dividend calculated*/
 var calcDividend = (result) =>{
   var output = [];
 

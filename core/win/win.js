@@ -4,6 +4,7 @@ var winPoolAmount = {
 };
 var output = {};
 
+// to add win bet entry into win pool and calculate sum of win pool as well
 var add = (winData) =>{
   winPoolAmount.sum = winPoolAmount.sum + parseFloat(winData[1]);
   if(winPool[winData[0]]){

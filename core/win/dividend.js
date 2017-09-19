@@ -1,6 +1,7 @@
 var win = require('./win');
 var tabcorpCommission = require('../../config');
 
+// calculate win dividend after taking the tabcorp commission out from win pool
 var calcWinPoolDividend = (winner) =>{
   var puntersShare = (100 - tabcorpCommission.winCommission)/100
   var winSplitShare = win.getWinPool().winPoolAmount.sum * puntersShare;

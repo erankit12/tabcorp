@@ -4,6 +4,7 @@ var placePoolAmount = {
 };
 var output = {};
 
+// to add place bet entry into place pool and calculate sum of place pool as well
 var add = (placeData) =>{
   placePoolAmount.sum = placePoolAmount.sum + parseFloat(placeData[1]);
   if(placePool[placeData[0]]){

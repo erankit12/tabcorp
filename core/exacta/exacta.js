@@ -4,6 +4,7 @@ var exactaPoolAmount = {
 };
 var output = {};
 
+// to add exacta bet entry into exacta pool and calculate sum of exacta pool as well
 var add = (exactaData) =>{
   exactaPoolAmount.sum = exactaPoolAmount.sum + parseFloat(exactaData[1]);
   if(exactaPool[exactaData[0]]){
