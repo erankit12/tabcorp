@@ -28,15 +28,4 @@ describe("Excata dividend", function(){
     done();
   });
 
-  // after(function(done){
-  //   var exactaPool = exacta.getExactaPool();
-  //   console.log("exactaPool", exactaPool);
-  //   exactaPool.exactaPool = {};
-  //   exactaPool.exactaPoolAmount = {
-  //     "sum":0.0
-  //   };
-  //   done();
-  // })
-
-
 });

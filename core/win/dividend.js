@@ -4,7 +4,12 @@ var tabcorpCommission = require('../../config');
 var calcWinPoolDividend = (winner) =>{
   var puntersShare = (100 - tabcorpCommission.winCommission)/100
   var winSplitShare = win.getWinPool().winPoolAmount.sum * puntersShare;
-  var winOutput = "W:"+ winner +":$"+ (winSplitShare/win.getWinPool().winPool[winner]).toFixed(2);
+  if(win.getWinPool().winPool[winner]){
+    var winOutput = "W:"+ winner +":$"+ (winSplitShare/win.getWinPool().winPool[winner]).toFixed(2);
+  }
+  else{
+    winOutput= "No bet on winning horse " + winner +".";
+  }
   return winOutput;
 }
 

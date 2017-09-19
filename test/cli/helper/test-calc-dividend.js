@@ -7,9 +7,11 @@ var exacta = require('../../../core/exacta/exacta');
 var place = require('../../../core/place/place');
 
 describe("Calculate dividend", function(){
+
   var winPool = win.getWinPool;
   var placePool = place.getPlacePool;
   var exactaPool = exacta.getExactaPool;
+
   before(function(done){
     win.getWinPool = function(){
       return { winPool: { '2': '3' }, winPoolAmount: { sum: 3 } };
@@ -36,15 +38,5 @@ describe("Calculate dividend", function(){
     assert.deepEqual(response, expectedResult);
     done();
   });
-
-  // after(function(done){
-  //   var e=exacta.getExactaPool();
-  //   console.log('-------',e)
-  //   exactaPool.exactaPool = {};
-  //   exactaPool.exactaPoolAmount = {
-  //     "sum":0.0
-  //   };
-  //   done();
-  // })
 
 });
